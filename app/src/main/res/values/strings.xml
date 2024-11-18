@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Fish Distribution App</string>
+    <string name="enter_fish_name">Enter Fish Name</string>
+    <string name="fetch_data">Fetch Distribution</string>
+</resources>
