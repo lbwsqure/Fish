@@ -1,7 +1,0 @@
-{
-  "name": "Java Servlet Container",
-  "dockerFile": "Dockerfile",
-  "forwardPorts": [8080],
-  "settings": {},
-  "extensions": []
-}
