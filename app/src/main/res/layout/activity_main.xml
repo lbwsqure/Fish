@@ -1,41 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp">
+    android:layout_height="match_parent">
 
-    <!-- 说明文字 -->
-    <TextView
-        android:id="@+id/textViewDescription"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Select the fish species you want to track:"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-    <!-- Spinner 用于选择鱼种 -->
     <Spinner
         android:id="@+id/spinnerFish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textViewDescription"
-        android:layout_marginTop="8dp" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
 
-    <!-- 按钮触发数据获取 -->
     <Button
         android:id="@+id/buttonFetchData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/spinnerFish"
-        android:layout_marginTop="16dp"
-        android:text="Fetch Distribution" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Fetch Data" />
 
-    <!-- WebView 用于显示地图 -->
     <WebView
         android:id="@+id/webView"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="match_parent"
         android:layout_below="@id/buttonFetchData"
-        android:layout_marginTop="16dp"
-        android:visibility="gone" />
-
+        android:layout_marginTop="20dp" />
 </RelativeLayout>
